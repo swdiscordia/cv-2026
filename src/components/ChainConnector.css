@@ -1,0 +1,38 @@
+.chain-connector {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 18px auto -20px;
+  transform-origin: top center;
+}
+
+.chain-svg {
+  width: 80px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.4;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.2) 33%,
+    rgba(0, 0, 0, 1) 66%,
+    rgba(0, 0, 0, 0.2)
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.2) 33%,
+    rgba(0, 0, 0, 1) 66%,
+    rgba(0, 0, 0, 0.2)
+  );
+  -webkit-mask-size: 100% 300%;
+  mask-size: 100% 300%;
+  animation: chain-flow 4s linear infinite;
+}
+
+@keyframes chain-flow {
+  0% { -webkit-mask-position: 0% 0%; mask-position: 0% 0%; }
+  100% { -webkit-mask-position: 0% 100%; mask-position: 0% 100%; }
+}

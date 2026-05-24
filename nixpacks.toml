@@ -1,0 +1,15 @@
+[phases.setup]
+nixPkgs = ["nodejs_22"]
+
+[phases.install]
+cmds = [
+  "corepack enable",
+  "corepack prepare yarn@4.7.0 --activate",
+  "yarn install"
+]
+
+[phases.build]
+cmds = ["yarn build"]
+
+[start]
+cmd = "npx serve -s dist -l tcp://0.0.0.0:8080"
