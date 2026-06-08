@@ -202,7 +202,7 @@ export const BLOCKS: Block[] = [
     company: 'ShapeShift',
     location: 'Remote',
     type: 'current',
-    description: 'Cross-functional contributor at ShapeShift: BD, product, marketing, and technical integration work. I open PRs for chain and DEX integrations, coordinate partner relationships and comms, run competitive analysis, and built an AI-automated outreach and follow-up tool across Salesforce, Telegram, and ShapeShift workflows.',
+    description: 'Cross-functional contributor at ShapeShift: BD, product, marketing, and technical integration work. I open PRs for chain and DEX integrations, coordinate partner relationships across engineering, design, and marketing, run competitive analysis, and built an AI-automated outreach and follow-up tool across Salesforce, Telegram, and ShapeShift workflows.',
     transactions: createTransactions(['BD', 'Product', 'Marketing', 'Chain Integrations', 'DEX Integrations', 'Partner Comms', 'AI Automation', 'Salesforce', 'Telegram', 'Competitive Analysis']),
     hash: '0x????????????????????????????????????????????????????????????????',
     previousHash: generateHash('dailymemecorp-2024'),
