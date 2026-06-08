@@ -346,6 +346,7 @@
     padding: 10mm 14mm;
     max-width: none;
     background: #000 !important;
+    zoom: 0.9;
   }
 
   .cv-header {
