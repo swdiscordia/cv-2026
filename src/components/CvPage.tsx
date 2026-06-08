@@ -5,24 +5,24 @@ import './CvPage.css';
 
 const SKILL_CATEGORIES = [
   {
-    label: 'Frontend',
-    skills: ['React', 'Vue.js', 'TypeScript', 'Nuxt', 'Vite', 'Storybook', 'Chakra UI'],
+    label: 'Business development',
+    skills: ['Partnerships', 'Outbound', 'Pipeline Management', 'Partner Follow-up'],
   },
   {
     label: 'Web3 & DeFi',
-    skills: ['Solana', 'EVM Chains', 'Thorchain', 'Cosmos', 'Multi-Chain', 'DeFi Protocols'],
+    skills: ['Chain Integrations', 'DEX Integrations', 'Cross-chain', 'API / Widget', 'DeFi'],
   },
   {
-    label: 'Backend',
-    skills: ['Node.js', 'GraphQL', 'Apollo', 'Prisma', 'AdonisJS', 'WebSockets'],
+    label: 'Product ops',
+    skills: ['Product Feedback', 'Partner Validation', 'Competitive Analysis', 'Prioritization'],
   },
   {
-    label: 'Mobile',
-    skills: ['React Native', 'Expo', 'Ionic'],
+    label: 'Automation',
+    skills: ['AI Workflows', 'Salesforce', 'Telegram', 'CRM Automation', 'GitHub PRs'],
   },
   {
-    label: 'Infrastructure',
-    skills: ['CI/CD', 'Monorepo', 'Jest', 'Electron', 'XState'],
+    label: 'Marketing',
+    skills: ['Partner Comms', 'Designer Collaboration', 'Co-marketing', 'English / French'],
   },
 ];
 
@@ -44,7 +44,7 @@ export const CvPage = () => {
 
   useEffect(() => {
     document.title = '0xDiscostu — CV';
-    return () => { document.title = '0xDiscostu - Web3 Engineer'; };
+    return () => { document.title = '0xDiscostu - Web3 Business Developer'; };
   }, []);
 
   return (
@@ -60,7 +60,7 @@ export const CvPage = () => {
         <header className="cv-header">
           <div className="cv-identity">
             <h1 className="cv-name">0xDiscostu</h1>
-            <p className="cv-title">Web3 Engineer &middot; Full-Stack Developer</p>
+            <p className="cv-title">Web3 BD &middot; Product &middot; Marketing &middot; Technical operator</p>
           </div>
           <div className="cv-contact">
             <span>github.com/swdiscordia</span>
@@ -141,7 +141,7 @@ export const CvPage = () => {
 
         <footer className="cv-footer">
           <span className="cv-hash">
-            {BLOCKS.length} blocks &middot; 10+ years of engineering &middot; open source contributor
+            {BLOCKS.length} blocks &middot; Web3 BD &middot; product, marketing, and technical execution
           </span>
         </footer>
       </div>

@@ -1,5 +1,5 @@
 /**
- * The Blockchain - 0xm4king's Career Chain
+ * The Blockchain - 0xDiscostu's Career Chain
  */
 
 import type { Block, Chain, Transaction } from '../types/blockchain';
@@ -198,12 +198,12 @@ export const BLOCKS: Block[] = [
     id: 'block-current',
     index: 11,
     timestamp: { start: 'May 2024', end: null },
-    title: 'Engineer',
+    title: 'Business Developer / Product / Marketing',
     company: 'ShapeShift',
     location: 'Remote',
     type: 'current',
-    description: '590+ PRs merged. 20+ chain integrations. Built the embeddable swap widget, perpetuals trading, limit orders, and notification system. Migrated CRA to Vite. Shipped Jupiter, Relay, deBridge, Stonfi swappers. Open source self-custody DeFi.',
-    transactions: createTransactions(['React', 'TypeScript', 'Vite', 'XState', 'Web3', 'DeFi', 'Solana', 'Thorchain', 'Multi-Chain', 'Open Source']),
+    description: 'Cross-functional contributor at ShapeShift: BD, product, marketing, and technical integration work. I open PRs for chain and DEX integrations, coordinate partner relationships and comms, run competitive analysis, and built an AI-automated outreach and follow-up tool across Salesforce, Telegram, and ShapeShift workflows.',
+    transactions: createTransactions(['BD', 'Product', 'Marketing', 'Chain Integrations', 'DEX Integrations', 'Partner Comms', 'AI Automation', 'Salesforce', 'Telegram', 'Competitive Analysis']),
     hash: '0x????????????????????????????????????????????????????????????????',
     previousHash: generateHash('dailymemecorp-2024'),
     nonce: 0, // Still mining

@@ -67,15 +67,15 @@ export const CvPreviewModal = ({ open, onClose }: CvPreviewModalProps) => {
         </button>
 
         <iframe
-          src="/0xm4king-cv.pdf"
+          src="/0xdiscostu-cv.pdf"
           className="cv-preview-iframe"
           title="CV Preview"
         />
 
         <div className="cv-preview-actions">
           <a
-            href="/0xm4king-cv.pdf"
-            download="0xm4king-cv.pdf"
+            href="/0xdiscostu-cv.pdf"
+            download="0xdiscostu-cv.pdf"
             className="cv-preview-download"
           >
             <HiOutlineDocumentDownload /> Download PDF
