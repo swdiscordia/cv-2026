@@ -151,7 +151,8 @@ export const BlockchainTimeline = () => {
         })}
         <div className="header-content">
           <h1 className="glitch" data-text="0xDiscostu">0xDiscostu</h1>
-          <p className="subtitle">Skills: Business Developer &bull; Marketing &bull; Engineer &bull; Product &bull; Web3</p>
+          <p className="subtitle">Skills: Business Developer &bull; Marketing &bull; Engineer &bull; Product &bull; Web3 &bull; Agentic AI Supercharged</p>
+          <p className="subtitle subtitle-supercharged">Agentic AI Supercharged</p>
           <div className="chain-stats">
             <div className="stat">
               <span className="stat-value">{careerBlocks.length}</span>

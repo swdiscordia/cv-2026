@@ -79,8 +79,17 @@
   font-family: 'JetBrains Mono', monospace;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.35);
-  margin: 16px 0 40px 0;
+  margin: 16px 0 10px 0;
   letter-spacing: 0.1em;
+}
+
+.subtitle-supercharged {
+  color: rgba(0, 255, 136, 0.7);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 40px 0;
+  text-align: center;
+  text-shadow: 0 0 18px rgba(0, 255, 136, 0.35);
 }
 
 .chain-stats {
@@ -419,6 +428,10 @@
 
   .subtitle {
     font-size: 0.85rem;
+  }
+
+  .subtitle-supercharged {
+    font-size: 0.8rem;
   }
 
   .footer-links {
