@@ -5,13 +5,18 @@ import { BlockCard } from './BlockCard';
 import { ChainConnector } from './ChainConnector';
 import { ChainModal } from './ChainModal';
 import { CvPreviewModal } from './CvPreviewModal';
-import { BLOCKS, CAREER_CHAIN } from '../data/chain';
+import { BLOCKS } from '../data/chain';
 import { CHAIN_DECORATIONS, getChainById } from '../data/chains';
 import type { ChainExperience } from '../data/chains';
 import './BlockchainTimeline.css';
 
 export const BlockchainTimeline = () => {
   const reversedBlocks = useMemo(() => [...BLOCKS].reverse(), []);
+  const careerBlocks = useMemo(() => BLOCKS.filter(block => block.type !== 'origin'), []);
+  const confirmedCareerBlocks = useMemo(
+    () => careerBlocks.filter(block => block.confirmed),
+    [careerBlocks]
+  );
   const [selectedChain, setSelectedChain] = useState<ChainExperience | null>(null);
   const [showCvPreview, setShowCvPreview] = useState(false);
   const sectionRefs = useRef<HTMLElement[]>([]);
@@ -146,14 +151,14 @@ export const BlockchainTimeline = () => {
         })}
         <div className="header-content">
           <h1 className="glitch" data-text="0xDiscostu">0xDiscostu</h1>
-          <p className="subtitle">BD &bull; Product &bull; Marketing &bull; Web3</p>
+          <p className="subtitle">Skills: Business Developer &bull; Marketing &bull; Engineer &bull; Product &bull; Web3</p>
           <div className="chain-stats">
             <div className="stat">
-              <span className="stat-value">{CAREER_CHAIN.totalBlocks}</span>
+              <span className="stat-value">{careerBlocks.length}</span>
               <span className="stat-label">BLOCKS</span>
             </div>
             <div className="stat">
-              <span className="stat-value">{BLOCKS.filter(b => b.confirmed).length}</span>
+              <span className="stat-value">{confirmedCareerBlocks.length}</span>
               <span className="stat-label">CONFIRMED</span>
             </div>
             <div className="stat">
