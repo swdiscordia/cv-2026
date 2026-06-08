@@ -123,7 +123,7 @@ export const JOURNEY_MILESTONES: JourneyMilestone[] = [
     title: 'BD / Product / Marketing',
     location: 'Remote — ShapeShift',
     coordinates: { lat: 49.4178, lng: 2.8261 },
-    startDate: '2024',
+    startDate: '2026',
     endDate: null,
     description: 'Cross-functional work at ShapeShift across BD, product, marketing, partner communications, chain and DEX integrations, competitive analysis, and AI automation.',
     type: 'current',

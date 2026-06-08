@@ -197,7 +197,7 @@ export const BLOCKS: Block[] = [
   {
     id: 'block-current',
     index: 11,
-    timestamp: { start: 'May 2024', end: null },
+    timestamp: { start: 'Feb 2026', end: null },
     title: 'Business Developer / Product / Marketing',
     company: 'ShapeShift',
     location: 'Remote',
