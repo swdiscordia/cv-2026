@@ -21,6 +21,11 @@ const TYPE_LABELS: Record<Block['type'], string> = {
   current: 'MINING...',
 };
 
+const formatTimestamp = (block: Block) => {
+  if (block.timestamp.end === block.timestamp.start) return block.timestamp.start;
+  return `${block.timestamp.start} → ${block.timestamp.end || 'Present'}`;
+};
+
 export const BlockCard = ({ block, displayIndex }: BlockCardProps) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const hashRef = useRef<HTMLSpanElement>(null);
@@ -123,7 +128,7 @@ export const BlockCard = ({ block, displayIndex }: BlockCardProps) => {
         <h2 className="block-title">{block.title}</h2>
         <h3 className="block-company">{block.company}</h3>
         <div className="block-timestamp">
-          <span>{block.timestamp.start} &rarr; {block.timestamp.end || 'Present'}</span>
+          <span>{formatTimestamp(block)}</span>
         </div>
         <p className="block-description">{block.description}</p>
       </div>

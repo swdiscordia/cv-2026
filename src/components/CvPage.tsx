@@ -27,6 +27,7 @@ const SKILL_CATEGORIES = [
 ];
 
 const formatDate = (block: Block) => {
+  if (block.timestamp.end === block.timestamp.start) return block.timestamp.start;
   const end = block.timestamp.end ?? 'Present';
   return `${block.timestamp.start} — ${end}`;
 };

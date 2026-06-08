@@ -7,15 +7,15 @@ import { COLORS } from '../constants/config';
 
 export const JOURNEY_MILESTONES: JourneyMilestone[] = [
   {
-    id: 'work-webexpr',
-    title: 'Full-stack Developer',
-    location: 'Paris, France',
+    id: 'work-intel',
+    title: 'Sales & Communications Representative',
+    location: 'Retail stores, France',
     coordinates: { lat: 48.8566, lng: 2.3522 },
-    startDate: '2014',
-    endDate: '2016',
-    description: 'First professional role at WebexpR/Wholehelp. Integrated 100+ CMS templates, built ERP interfaces (EBP ↔ PrestaShop), set up Active Directory, and developed mobile apps with Ionic/Angular. Where I learned that real-world code is messy — and that\'s okay.',
+    startDate: '2011',
+    endDate: '2011',
+    description: 'Sales and communication role for Intel in large retail stores. Promoted new processor launches, explained product benefits to customers, and supported sales teams on the floor.',
     type: 'work',
-    technologies: ['WordPress', 'PrestaShop', 'Ionic', 'Angular', 'PHP', 'SEO'],
+    technologies: ['Intel', 'Retail Sales', 'Communication', 'Product Promotion', 'Customer Advice', 'Hardware'],
     color: COLORS.MARKERS.work,
   },
   {
@@ -144,7 +144,7 @@ export const STORY_SECTIONS: StorySection[] = [
     id: 'beginnings',
     title: 'First Steps',
     subtitle: 'Learning the craft',
-    milestoneIds: ['work-webexpr', 'work-cognix'],
+    milestoneIds: ['work-intel', 'work-cognix'],
   },
   {
     id: 'education',
