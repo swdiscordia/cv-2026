@@ -20,7 +20,7 @@ export const JOURNEY_MILESTONES: JourneyMilestone[] = [
   },
   {
     id: 'education-afec',
-    title: 'Sales Diploma',
+    title: 'Sales Training Graduation',
     location: 'AFEC, France',
     coordinates: { lat: 48.8566, lng: 2.3522 },
     startDate: '2012',
