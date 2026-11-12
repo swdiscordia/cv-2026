@@ -130,6 +130,19 @@ export const CvPage = () => {
                   <span className="cv-exp-date">{formatDate(block)}</span>
                 </div>
                 <p className="cv-exp-desc">{block.description}</p>
+                {block.achievements && block.achievements.length > 0 && (
+                  <ul className="cv-exp-achievements">
+                    {block.achievements.map(a => (
+                      <li key={a.text}>
+                        {a.link ? (
+                          <a href={a.link} target="_blank" rel="noopener noreferrer">{a.text}</a>
+                        ) : (
+                          a.text
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                )}
                 <div className="cv-exp-tech">
                   {block.transactions.map(tx => (
                     <span key={tx.id} className="cv-tech-tag">{tx.value}</span>

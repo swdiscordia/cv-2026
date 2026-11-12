@@ -20,6 +20,12 @@ export interface Block {
   nonce: number;
   confirmed: boolean;
   link?: string;
+  achievements?: Achievement[];
+}
+
+export interface Achievement {
+  text: string;
+  link?: string;
 }
 
 export interface Transaction {

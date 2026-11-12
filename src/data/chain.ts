@@ -208,6 +208,15 @@ export const BLOCKS: Block[] = [
     previousHash: generateHash('dailymemecorp-2024'),
     nonce: 0, // Still mining
     confirmed: false,
+    achievements: [
+      { text: 'Integrated the Aptos chain', link: 'https://github.com/shapeshift/web/pull/12349' },
+      { text: 'Integrated Robinhood Chain', link: 'https://github.com/shapeshift/web/pull/12497' },
+      { text: 'Integrated the Elysium chain across the app, public API and swap widget', link: 'https://github.com/shapeshift/web/pull/12832' },
+      { text: 'Integrated the KyberSwap swapper across the app, public API and swap widget', link: 'https://github.com/shapeshift/web/pull/12819' },
+      { text: 'Integrated the Panora swapper on Aptos', link: 'https://github.com/shapeshift/web/pull/12492' },
+      { text: 'Managed the BOB Gateway co-marketing launch', link: 'https://x.com/build_on_bob/status/2074161635590369698' },
+      { text: 'Managed partner co-marketing for the ShapeShift Widget & API launch', link: 'https://x.com/ShapeShift/status/2102114073332899882' },
+    ],
   },
 ];
 

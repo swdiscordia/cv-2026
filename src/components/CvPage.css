@@ -462,3 +462,23 @@
     margin-left: 0;
   }
 }
+
+.cv-exp-achievements {
+  margin: 0 0 6px 0;
+  padding-left: 16px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.cv-exp-achievements a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media print {
+  .cv-exp-achievements a {
+    text-decoration: none;
+  }
+}

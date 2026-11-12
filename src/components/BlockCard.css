@@ -305,3 +305,21 @@
     display: none;
   }
 }
+
+.block-achievements {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.block-achievements a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.block-achievements a:hover {
+  color: #fff;
+}

@@ -131,6 +131,21 @@ export const BlockCard = ({ block, displayIndex }: BlockCardProps) => {
           <span>{formatTimestamp(block)}</span>
         </div>
         <p className="block-description">{block.description}</p>
+        {block.achievements && block.achievements.length > 0 && (
+          <ul className="block-achievements">
+            {block.achievements.map((a) => (
+              <li key={a.text}>
+                {a.link ? (
+                  <a href={a.link} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                    {a.text}
+                  </a>
+                ) : (
+                  a.text
+                )}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
 
       <div className="block-transactions">
