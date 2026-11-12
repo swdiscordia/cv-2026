@@ -108,6 +108,21 @@ export const ChainModal = ({ chain, onClose }: ChainModalProps) => {
           </div>
         )}
 
+        {chain.links && chain.links.length > 0 && (
+          <div className="chain-modal-section">
+            <h3 className="chain-modal-section-title">LINKS</h3>
+            <ul className="chain-modal-links">
+              {chain.links.map((l) => (
+                <li key={l.url}>
+                  <a href={l.url} target="_blank" rel="noopener noreferrer">
+                    {l.label} &rarr;
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         {chain.prLink && (
           <a
             href={chain.prLink}
