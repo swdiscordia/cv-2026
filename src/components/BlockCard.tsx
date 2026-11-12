@@ -134,14 +134,21 @@ export const BlockCard = ({ block, displayIndex }: BlockCardProps) => {
         {block.achievements && block.achievements.length > 0 && (
           <ul className="block-achievements">
             {block.achievements.map((a) => (
-              <li key={a.text}>
-                {a.link ? (
-                  <a href={a.link} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
-                    {a.text}
-                  </a>
-                ) : (
-                  a.text
-                )}
+              <li key={a.title}>
+                <strong>{a.title}:</strong>{' '}
+                {a.items.map((item, i) => (
+                  <span key={item.text}>
+                    {i > 0 && (i === a.items.length - 1 ? ' and ' : ', ')}
+                    {item.link ? (
+                      <a href={item.link} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                        {item.text}
+                      </a>
+                    ) : (
+                      item.text
+                    )}
+                    {item.suffix}
+                  </span>
+                ))}
               </li>
             ))}
           </ul>

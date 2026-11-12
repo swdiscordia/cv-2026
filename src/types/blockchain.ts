@@ -23,9 +23,16 @@ export interface Block {
   achievements?: Achievement[];
 }
 
-export interface Achievement {
+export interface AchievementItem {
   text: string;
   link?: string;
+  /** Plain text right after the item, e.g. a scope in parentheses */
+  suffix?: string;
+}
+
+export interface Achievement {
+  title: string;
+  items: AchievementItem[];
 }
 
 export interface Transaction {

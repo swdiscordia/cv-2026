@@ -209,13 +209,32 @@ export const BLOCKS: Block[] = [
     nonce: 0, // Still mining
     confirmed: false,
     achievements: [
-      { text: 'Integrated the Aptos chain', link: 'https://github.com/shapeshift/web/pull/12349' },
-      { text: 'Integrated Robinhood Chain', link: 'https://github.com/shapeshift/web/pull/12497' },
-      { text: 'Integrated the Elysium chain across the app, public API and swap widget', link: 'https://github.com/shapeshift/web/pull/12832' },
-      { text: 'Integrated the KyberSwap swapper across the app, public API and swap widget', link: 'https://github.com/shapeshift/web/pull/12819' },
-      { text: 'Integrated the Panora swapper on Aptos', link: 'https://github.com/shapeshift/web/pull/12492' },
-      { text: 'Managed the BOB Gateway co-marketing launch', link: 'https://x.com/build_on_bob/status/2074161635590369698' },
-      { text: 'Managed partner co-marketing for the ShapeShift Widget & API launch', link: 'https://x.com/ShapeShift/status/2102114073332899882' },
+      {
+        title: 'Integrated 3 chains',
+        items: [
+          { text: 'Aptos', link: 'https://github.com/shapeshift/web/pull/12349' },
+          { text: 'Robinhood Chain', link: 'https://github.com/shapeshift/web/pull/12497' },
+          { text: 'Elysium', link: 'https://github.com/shapeshift/web/pull/12832', suffix: ' (app, public API and swap widget)' },
+        ],
+      },
+      {
+        title: 'Integrated 2 swappers',
+        items: [
+          { text: 'KyberSwap', link: 'https://github.com/shapeshift/web/pull/12819', suffix: ' (app, public API and swap widget)' },
+          { text: 'Panora', link: 'https://github.com/shapeshift/web/pull/12492', suffix: ' on Aptos' },
+        ],
+      },
+      {
+        title: 'Ran ecosystem listings and launch co-marketing',
+        items: [
+          { text: 'Katana', link: 'https://x.com/ShapeShift/status/2039704767715217903' },
+          { text: 'MegaETH', link: 'https://x.com/ShapeShift/status/2056784579675975752' },
+          { text: 'BOB', link: 'https://x.com/build_on_bob/status/2074161635590369698' },
+          { text: 'Starknet', link: 'https://github.com/419Labs/starknet-ecosystem.com/pull/1155' },
+          { text: 'Robinhood Chain' },
+          { text: 'the Widget & API launch', link: 'https://x.com/ShapeShift/status/2102114073332899882' },
+        ],
+      },
     ],
   },
 ];
